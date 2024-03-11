@@ -8,9 +8,38 @@ namespace libak
 {
     class Program
     {
+        static void Kiir(int[] t, string cim) {
+            Console.WriteLine(cim);
+            foreach (int szam in t)
+            {
+                Console.Write($"{szam}, ");
+            }
+            Console.WriteLine();
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("szia");
+
+            /*
+             * LIBÁK
+
+            A róka libát lop a faluból. A libák súlyát – pontosabban tömegét – listában adjuk meg. A farkas a dűlőútnál várja a rókát, és a három kilónál nagyobb libákat elveszi – a piciket nagylel�kűen otthagyja a rókának.
+            libak = [1,5,2,3,4]
+
+            a. Hány kiló libát ehet meg a róka?
+            b. Átlagosan hány kilósak a rókának maradt libák?
+            c1. Előfordult-e olyan, hogy a róka legalább háromkilós libát lopott?
+            c2. Előfordult-e olyan, hogy a róka kisebb libát hozott, mint az előző napon?
+            d. Hányadik napon sikerült a rókának először legalább háromkilós libát lopnia?
+            e. Melyik a róka első legalább háromkilós libája?
+            f. Hány libát tarthat meg a róka?
+            g. Mekkora a legkisebb liba, amit a farkas elvesz a rókától?
+
+             */
+
+            int[] libak = { 1, 5, 2, 3, 4 };
+            Kiir(libak,"libak sullyai");
+            Console.WriteLine("Nyomj egy billentyűt");
+            Console.ReadKey(true);
         }
     }
 }
