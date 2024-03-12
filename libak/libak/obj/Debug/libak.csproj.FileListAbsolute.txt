@@ -5,3 +5,10 @@ C:\Users\tanar-monoki\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.cspr
 C:\Users\tanar-monoki\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.csproj.CoreCompileInputs.cache
 C:\Users\tanar-monoki\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.exe
 C:\Users\tanar-monoki\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.pdb
+C:\Users\User\Documents\GitHub\libak_py\libak\libak\bin\Debug\libak.exe.config
+C:\Users\User\Documents\GitHub\libak_py\libak\libak\bin\Debug\libak.exe
+C:\Users\User\Documents\GitHub\libak_py\libak\libak\bin\Debug\libak.pdb
+C:\Users\User\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.exe
+C:\Users\User\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.pdb

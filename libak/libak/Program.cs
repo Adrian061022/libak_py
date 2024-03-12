@@ -8,7 +8,8 @@ namespace libak
 {
     class Program
     {
-        static void Kiir(int[] t, string cim) {
+        static void Kiir(int[] t, string cim)
+        {
             Console.WriteLine(cim);
             foreach (int szam in t)
             {
@@ -17,23 +18,51 @@ namespace libak
             Console.WriteLine();
         }
 
-        static int Osszegez(int[] t) { 
-        int osszeg=0;
-        
+        static int Osszegez(int[] t)
+        {
+            int osszeg = 0;
+
             for (int i = 0; i < t.Length; i++)
             {
                 if (t[i] <= 3)
                 {
-                    osszeg+=t[i];
+                    osszeg += t[i];
                 }
             }
             return osszeg;
         }
 
-        static void Kiir_eredmenyek(int roka_liba_suly) {
+        static void Kiir_eredmenyek(int roka_liba_suly)
+        {
 
             Console.WriteLine($"A roka libáinak súlya: {roka_liba_suly}kg.");
-        
+
+        }
+        static double Atlag_suly(int[] t)
+        {
+            int osszeg = 0;
+            int darab = 0;
+
+            for (int i = 0; i < t.Length; i++)
+            {
+                if (t[i] <= 3)
+                {
+                    osszeg += t[i];
+                    darab++;
+                }
+            }
+
+            if (darab == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return (double)osszeg / darab;
+            }
+
+
+
         }
         static void Main(string[] args)
         {
@@ -56,9 +85,11 @@ namespace libak
              */
 
             int[] libak = { 1, 5, 2, 3, 4 };
-            Kiir(libak,"libak sullyai");
-            int hany_kilo_libat_ehet_meg_a_roka=Osszegez(libak);
+            Kiir(libak, "libak sullyai");
+            int hany_kilo_libat_ehet_meg_a_roka = Osszegez(libak);
             Kiir_eredmenyek(hany_kilo_libat_ehet_meg_a_roka);
+            double atlagos_suly = Atlag_suly(libak);
+            Console.WriteLine(atlagos_suly);
             Console.WriteLine("Nyomj egy billentyűt");
             Console.ReadKey(true);
         }
