@@ -32,10 +32,12 @@ namespace libak
             return osszeg;
         }
 
-        static void Kiir_eredmenyek(int roka_liba_suly)
+        static void Kiir_eredmenyek(int roka_liba_suly, double roka_atlag, string volt_harom)
         {
 
             Console.WriteLine($"A roka libáinak súlya: {roka_liba_suly}kg.");
+            Console.WriteLine($"A roka libáinak súlyának átlaga: {roka_atlag}kg.");
+            Console.WriteLine($" {volt_harom} olyan, hogy a róka leglabb harmokilos libat lopott.");
 
         }
         static double Atlag_suly(int[] t)
@@ -64,6 +66,40 @@ namespace libak
 
 
         }
+
+        static int Megszamolas(int[] l) {
+
+            int db = 0;
+            for (int i = 0; i < l.Length; i++)
+            {
+                if (l[i] <= 3) {
+
+                    db++;
+                }
+
+            }
+            return db;
+        
+        }
+
+        static bool Eldontes(int[] l)
+        {
+
+            bool van = false;
+            int i = 0;
+            while (i<l.Length && !(l[i]>=3))
+            {
+                if (i<l.Length)
+                {
+
+                    van = true;
+
+                }
+               
+            }
+            return van;
+
+        }
         static void Main(string[] args)
         {
 
@@ -85,10 +121,24 @@ namespace libak
              */
 
             int[] libak = { 1, 5, 2, 3, 4 };
-            Kiir(libak, "libak sullyai");
+            //a
             int hany_kilo_libat_ehet_meg_a_roka = Osszegez(libak);
-            Kiir_eredmenyek(hany_kilo_libat_ehet_meg_a_roka);
             double atlagos_suly = Atlag_suly(libak);
+            //b
+            int hany_db_libat_ehet_meg_a_roka = Megszamolas(libak);
+            double rokanal_maradt_libak_atlaga = (double)hany_kilo_libat_ehet_meg_a_roka / hany_db_libat_ehet_meg_a_roka;
+            //c1
+            bool volt_legalabb_harom_kilos_liba = Eldontes(libak);
+            string volt_legalabb_harom_kilos_liba_szoveg = "Nem fordult elő";
+            if (volt_legalabb_harom_kilos_liba)
+            {
+                volt_legalabb_harom_kilos_liba_szoveg = "Előfordult";
+            }
+            
+            Kiir(libak, "libak sullyai");
+            Kiir_eredmenyek(hany_kilo_libat_ehet_meg_a_roka, hany_kilo_libat_ehet_meg_a_roka, volt_legalabb_harom_kilos_liba_szoveg);
+            
+
             Console.WriteLine(atlagos_suly);
             Console.WriteLine("Nyomj egy billentyűt");
             Console.ReadKey(true);

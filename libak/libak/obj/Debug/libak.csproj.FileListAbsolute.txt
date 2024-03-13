@@ -12,3 +12,10 @@ C:\Users\User\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.csproj.Assem
 C:\Users\User\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.exe
 C:\Users\User\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.pdb
+C:\Users\1tc-maradr\Documents\GitHub\libak_py\libak\libak\bin\Debug\libak.exe.config
+C:\Users\1tc-maradr\Documents\GitHub\libak_py\libak\libak\bin\Debug\libak.exe
+C:\Users\1tc-maradr\Documents\GitHub\libak_py\libak\libak\bin\Debug\libak.pdb
+C:\Users\1tc-maradr\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.csproj.AssemblyReference.cache
+C:\Users\1tc-maradr\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.csproj.CoreCompileInputs.cache
+C:\Users\1tc-maradr\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.exe
+C:\Users\1tc-maradr\Documents\GitHub\libak_py\libak\libak\obj\Debug\libak.pdb
